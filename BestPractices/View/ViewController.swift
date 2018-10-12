@@ -58,7 +58,11 @@ class ViewController: UIViewController {
     
     // MARK:  Buttons
     @IBAction func nextViewWasPressed(sender:UIButton) {
-        // Could handle any other prep or actions here for segue
+        // Could handle any other prep or actions here
+    }
+    
+    @IBAction func refreshView(sender:UIButton) {
+        configureView()
     }
     
     // Here we can pass the closure to update the weather

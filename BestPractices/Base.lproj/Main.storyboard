@@ -23,20 +23,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbQ-yv-6jP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbQ-yv-6jP">
                                 <rect key="frame" x="144" y="185" width="87" height="30"/>
                                 <state key="normal" title="Next View"/>
                                 <connections>
+                                    <action selector="nextViewWasPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egp-mL-fHZ"/>
                                     <segue destination="JEu-QP-4et" kind="show" identifier="showNextView" id="GBe-9M-E1T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V96-Mp-r4j">
+                                <rect key="frame" x="144" y="241" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshViewWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PiN-hB-pmR"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="V96-Mp-r4j" firstAttribute="top" secondItem="EbQ-yv-6jP" secondAttribute="bottom" constant="26" id="0SS-IE-B0k"/>
                             <constraint firstItem="xnf-lH-gBY" firstAttribute="centerX" secondItem="EbQ-yv-6jP" secondAttribute="centerX" id="EY2-3t-aF6"/>
                             <constraint firstItem="xnf-lH-gBY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="NTa-pI-Rsz"/>
                             <constraint firstItem="xnf-lH-gBY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="Y5v-g6-H1P"/>
                             <constraint firstItem="xnf-lH-gBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eU2-f9-oAt"/>
+                            <constraint firstItem="V96-Mp-r4j" firstAttribute="leading" secondItem="EbQ-yv-6jP" secondAttribute="leading" id="fH6-tm-KoW"/>
                             <constraint firstItem="EbQ-yv-6jP" firstAttribute="top" secondItem="xnf-lH-gBY" secondAttribute="bottom" constant="68" id="uoI-BJ-EZu"/>
                             <constraint firstItem="EbQ-yv-6jP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="whZ-lH-BgU"/>
                         </constraints>
